@@ -6,7 +6,7 @@ var leitor = readline.createInterface({
 let continuar = true;
 function perguntar() {
  if (continuar) {
- leitor.question("Digite uma palavra (ou 'sair' para terminar): ", function(answer) {
+ leitor.question("Digite uma palavra (ou 'sair' para terminar): ", function(answer:any) {
  if (answer.toLowerCase() === 'sair') {
  continuar = false;
  leitor.close();
